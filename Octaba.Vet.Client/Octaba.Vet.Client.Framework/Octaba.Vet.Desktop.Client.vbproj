@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{445FA776-0FA1-467A-AFA9-2A271A7C1652}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Octaba.Vet.Desktop.Client.My.MyApplication</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>Octaba.Vet.Desktop.Client</RootNamespace>
     <AssemblyName>Octaba.Vet.Desktop.Client</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Octaba.Vet.Desktop.Client\bin\Debug\</OutputPath>
     <DocumentationFile>Octaba.Vet.Desktop.Client.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>

@@ -5,8 +5,4 @@
     Public Function res(a As Integer, b As Integer) As Integer
         Return a - b
     End Function
-
-    Private Sub frmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBox1.Visible = False
-    End Sub
 End Class

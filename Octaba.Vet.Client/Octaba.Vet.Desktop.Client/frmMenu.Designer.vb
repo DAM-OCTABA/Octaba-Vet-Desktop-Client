@@ -30,8 +30,6 @@ Partial Class frmMenu
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Message = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -100,37 +98,16 @@ Partial Class frmMenu
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 3
         '
-        'Message
-        '
-        Me.Message.AutoSize = True
-        Me.Message.Location = New System.Drawing.Point(12, 426)
-        Me.Message.Name = "Message"
-        Me.Message.Size = New System.Drawing.Size(104, 13)
-        Me.Message.TabIndex = 4
-        Me.Message.Text = "Menú OCTABA VET"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(287, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 24)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Menú OCTABA VET"
-        '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Message)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.btnLogout)
         Me.Name = "frmMenu"
-        Me.Text = "Menu"
+        Me.Text = "Form1"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -145,6 +122,4 @@ Partial Class frmMenu
     Friend WithEvents ToolStripButton3 As ToolStripButton
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Message As Label
-    Friend WithEvents Label1 As Label
 End Class

@@ -43,9 +43,8 @@ Public Class frmLogin
             Dim res = Await req.GetJsonAsync(Of TokenResponse)()
             Dim token = New JwtSecurityToken(jwtEncodedString:=res.id_token)
             Message1.Visible = False
-            frmMenu.Message.Text = $"Has iniciat sesisió amb l'usuari:, {token.Claims.FirstOrDefault(Function(c) c.Type = JwtRegisteredClaimNames.Name)?.Value}"
+            'Message2.Text = $"Has iniciat sesisió amb l'usuari:, {token.Claims.FirstOrDefault(Function(c) c.Type = JwtRegisteredClaimNames.Name)?.Value}"
             'Message2.Visible = True
-            TextBox1.Visible = False
             frmMenu.Show()
             Me.Hide()
         End If
@@ -69,7 +68,4 @@ Public Class frmLogin
         Public Property expires_in As Integer
     End Class
 
-    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBox1.Visible = False
-    End Sub
 End Class
